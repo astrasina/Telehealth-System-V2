@@ -1,0 +1,295 @@
+/* Televet Health - Landing Page Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+:root {
+    --primary-color: #4a90e2;
+    --primary-dark: #357abd;
+    --secondary-color: #2ecc71;
+    --text-dark: #2c3e50;
+    --text-light: #7f8c8d;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+*/
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #E3E3E3;
+    color: black;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Header */
+.nav-header {
+    background: #E3E3E3;
+    box-shadow: 0 2px 20px #456882;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 5px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Lalezar', cursive;
+    font-size: 35px;
+    color: #1B3C53;
+    font-weight: 900;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 25px;
+    width: 110px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-login {
+    background: #1B3C53;
+    color: #E3E3E3;
+    border: none;
+}
+
+.btn-login:hover {
+    background: #E3E3E3;
+    color: #1B3C53;
+    font-weight: 900;
+}
+
+.btn-signup {
+    background: #1B3C53;
+    color: #E3E3E3;
+    border: none;
+}
+
+.btn-signup:hover {
+    background: #E3E3E3;
+    color: #1B3C53;
+    font-weight: 900;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #E3E3E3;
+    color: #1B3C53;
+    width: 135px;
+    border-radius: 100px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #E3E3E3;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+
+.btn-cta {
+    font-size: 17px;
+    background: linear-gradient(to bottom, #1B3C53, black);
+    padding: 15px 40px;
+    color: #E3E3E3;
+    width: auto;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #456882;
+}
+
+.btn-cta:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to bottom, black, #1B3C53);
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+    background: linear-gradient(#1B3C53 0%, #E3E3E3 50%, #1B3C53 100%);
+    color: #1B3C53;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-family: Aboreto;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+    font-family: Afacad;
+    font-style: italic;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+/* Features Section */
+.features {
+    padding: 70px 0;
+    background: #E3E3E3;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #1B3C53;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: #456882 10px 10px 10px -5px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1B3C53 0%, #456882 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: #E3E3E3;
+}
+
+.feature-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1B3C53;
+    font-family: Afacad;
+}
+
+
+/* Call to Action Section */
+.cta {
+    padding: 60px 0;
+    background: #E3E3E3;
+    text-align: center;
+}
+
+.cta h2 {
+    font-family: Aboreto;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+/* Footer */
+.footer {
+    background: #1B3C53;
+    color: #E3E3E3;
+    padding: 12px 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-buttons {
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+}
